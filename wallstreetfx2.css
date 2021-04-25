@@ -578,6 +578,15 @@ color: rgb(75, 2, 75) ;
 
 @media only screen and (max-width:768px)
 {
+
+  .header .menu-icon {
+    left: 60%
+  }
+
+  body{
+    width: 100%;
+    margin:0;
+  }
 [class*="mob-col-"] {
   width: 100%;
 }
@@ -633,6 +642,8 @@ div.column {width:100%; height: fit-content;}
 
 /*The  upsell area max-768px ends but media querry for this breakpoint continues*/
 
+
+
 .carousel {
   top: 50px;
 }
@@ -654,8 +665,10 @@ bottom: 100%;
 
 @media only screen and (max-width:665px)
 {
-    .carousel, .slide { 
-      clip-path: inset(0% 0% 1% 0%);}
+    .carousel, .slide { height: fit-content;
+      clip-path: inset(0% 0% 1% 0%);
+    margin-bottom: 30px;
+    }
 
 
       .carousel-caption {
