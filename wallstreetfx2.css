@@ -4,9 +4,11 @@ body{ margin: 0;
     font-family: 'Open Sans', sans-serif, Roboto;
 font-size: 16px;
 background-color: white;  letter-spacing: 0.05em;
-box-sizing: border-box; color:ivory
+box-sizing: border-box; 
+color:ivory
 }
 
+* {box-sizing: border-box;}
 
   /*Css sourse for menu  header https://codepen.io/mutedblues/pen/MmPNPG*/
 
@@ -75,6 +77,11 @@ color: #ffcc00; font-size: 1.2em;
   transition: max-height .2s ease-out;
 }
 
+.carousel, .slide {clip-path: inset(0% 0% 15% 0%);}
+
+.carousel-caption >h2{
+  color: rgb(252, 206, 2)
+}
 /* menu icon */
 
 .header .menu-icon {
@@ -253,22 +260,23 @@ color: #ffcc00; font-size: 1.2em;
 .fa-whatsapp {  background-color:black; color: white; border-radius: 50%; width: 50px; height: 50px;  padding: 10px; position: fixed; bottom: 100px;
   right: 7%; z-index: 1; }
 
+  
 
-
- .why-choose { position:relative; width: 100%; height: 150px;
-  background-image: url("images/Slide-image4.jpg"); text-align: center;
+ .why-choose { width: 80%; height: 150px;
+   text-align: center; color: black; margin: auto; padding-top: 20px;
 
 }
 
 p.why-choose {margin-top: 20px;}
 
 
-.why-choose h4 { padding: 5px;font-weight: bold;}
+.why-choose h3 { padding: 5px;font-weight: bold;}
 
 .why-choose-inner { height: auto; margin-top: auto; }
 
 .flex-container {
 display: flex; flex-flow: row wrap; width: 100%; COLOR: black;
+position:relative;
 }
 
 
@@ -375,7 +383,7 @@ opacity: 0.2
 
 .about-sec2 {width: 100%; height: 300px;;margin-top: 10px; color: black; position: relative;}
 .about-sec2 img { width: 30%; height: auto; float: left; margin-right: 50px;}
-.purple-lable { 
+.purple-lable1 { 
   background-image:linear-gradient(rgb(116, 0, 116), rgb(199, 2, 199)); 
   padding: 20px; width:200px; 
   height:200px; border-radius:50%;
@@ -385,9 +393,21 @@ opacity: 0.2
  text-align: center; line-height: 30pt ;
  }
 
+ .purple-lable2  { 
+  background-image:linear-gradient(rgb(116, 0, 116), rgb(199, 2, 199)); 
+  padding: 20px; width:200px; 
+  height:200px; border-radius:50%;
+  position:absolute; top: 20%; left: 25%;
+  font-weight:bolder;
+ font-size: 30pt; color: white;
+ text-align: center; line-height: 30pt ;
+ }
+
+
+
  .about-parag {padding: 100px; margin-left: 45%; display: flex; font-size: 1.2em;}
 
- .about-sec3 { width: 100%; height: 300px;;margin-top: 30px; color: black; position: relative; overflow: hidden;}
+ .about-sec3 { width: 100%; height: fit-content;margin-top: 30px; color: black; position: relative; overflow: hidden;}
 
  .about-container-down{ 
   height: 500px; width:100%; 
@@ -396,8 +416,7 @@ opacity: 0.2
   display: block; overflow: hidden; 
   background: purple; 
   background-image: linear-gradient(  rgb(116, 0, 116), black); 
-  top: 30px; overflow: hidden;"
- }
+  top: 30px; overflow: hidden;}
  
  .about-container-down > img {height: auto; width: 100%; opacity: 0.2
 }
@@ -504,4 +523,184 @@ input[type=submit]:hover {
   width: 100%;
   /* The width is the width of the web page */
 }
+
+
+/*FAQs Accordion CSS starts*/
+
+.accordion {
+  background-color: #eee;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.4s;
+color: rgb(75, 2, 75) ;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(17, 16, 16);
+  color:white;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  color: black;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  width: 100%;
+}
+
+.faqs {width: 80%; height:auto;
+  margin:auto
+  ;}
+
+/*FAQs Accordion CSS ends*/
+
+/*Media Querries*/
+
+@media only screen and (max-width:768px)
+{
+[class*="mob-col-"] {
+  width: 100%;
+}
+
+.flex-container div {width: 100%;}
+.flex-text1{ font-size: 1em;}
+.flex-text2 { font-size: 1em;}
+
+
+.row {position:relative}
+
+.card-purple {height: fit-content; margin-bottom: 5px; margin-top: 5px;}
+.card-purple {height: fit-content; margin-bottom: 5px;margin-top: 5px;}
+
+.card-black:hover {background-image: linear-gradient(to bottom, rgb(94, 1, 94), black)
+}
+
+.card-purple:hover { background-image: linear-gradient( to right, black, black) }
+
+.column:hover {width: 100%;}
+
+.why-choose {
+
+  width: 100%;
+  height:fit-content;
+}
+
+div.column {width:100%; height: fit-content;}
+
+
+
+.flex-img-top{position: relative;
+  width: 100%;
+  height: 50em;
+;
+
+}
+
+.img-top {
+  position: relative;
+  bottom:40%;
+  float: left;
+  clear: both;
+  margin-top:0%;
+}
+
+
+.text-downn1 {
+
+  position: relative;
+  top:60%;
+} 
+
+/*The  upsell area max-768px ends but media querry for this breakpoint continues*/
+
+.carousel {
+  top: 50px;
+}
+
+.carousel-caption {
+width: 60%;
+bottom: 100%;
+}
+
+ .carousel-caption h2 {font-size:3vw;}
+ 
+
+
+ .carousel-caption p {font-size: 2v;}
+ 
+
+}/*media querry for 768px ends*/
+
+
+@media only screen and (max-width:665px)
+{
+    .carousel, .slide { 
+      clip-path: inset(0% 0% 1% 0%);}
+
+
+      .carousel-caption {
+        position: absolute;
+        width: 60%;
+        top: 20%;
+        }
+
+        .carousel-caption h2 {font-size:15pt;}
+ 
+
+
+        .carousel-caption p {font-size: 10pt;}
+
+  }
+
+
+
+@media only screen and (max-width:600px)
+{
+  /*The following is for the upsell area*/
+  .flex-img-top{position: relative;
+    width: 100%;
+    height: 45em;
+  
+  }
+  
+  .img-top {
+    position: relative;
+    bottom:50%;
+    float: left;
+    clear: both;
+    margin-top:0;
+  }
+  
+  
+  .text-downn1 {
+  
+    position: relative;
+    top:45%;
+  
+  }
+/*The upsell area media querry for 600px stops here but media querry for other sections continues*/
+
+
+} /*media querry for 768px ends*/
+
 
