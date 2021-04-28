@@ -750,7 +750,9 @@ input[type=submit]:hover {
   transition: 0.4s;
 }
 
-.active, .accordion1:hover {
+
+
+.active1, .accordion1:hover {
   background-color: #ccc;
 }
 
@@ -762,7 +764,7 @@ input[type=submit]:hover {
   margin-left: 5px;
 }
 
-.active:after {
+.active1:after {
   content: "\2212";
 }
 
