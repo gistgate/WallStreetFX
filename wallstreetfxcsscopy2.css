@@ -2,7 +2,7 @@
 
 body{ margin: 0;
     font-family: 'Open Sans', sans-serif, Roboto;
-font-size: 16px;
+font-size: 18px;
 background-color: white;  letter-spacing: 0.05em;
 box-sizing: border-box; 
 color:ivory
@@ -10,7 +10,7 @@ color:ivory
 
 * {box-sizing: border-box;}
 
-  /*Css sourse for menu header https://codepen.io/mutedblues/pen/MmPNPG*/
+  /*Css sourse for menu  header https://codepen.io/mutedblues/pen/MmPNPG*/
 
 
 
@@ -91,6 +91,7 @@ color: #ffcc00; font-size: 1.2em;
 
 @media only screen and (min-width:768px)
 {
+
 
   .carousel-inner img{opacity: 0.5;}
 
@@ -367,12 +368,27 @@ z-index: -1;
   position: relative; bottom:20px; width: 100%; margin: 0;
 }
 
+@media only screen and (max-width: 768px){
 
-.card { color: white; border-radius: 0%; height: 250px; border: none;}
+.row {
+  position: relative; width: 100%; margin: 0;
+  bottom:0;
+}
+
+card {
+  color: white;
+  border-radius: 0%;
+   height: auto;
+  border: none;
+}
+
+}
+
+.card { color: white; border-radius: 0%; height: 420px; border: none;}
 
 .card i { font-size: 2.5em; color :white; padding: 5px;}
 
-.card-purple { background-image: linear-gradient(to bottom, rgb(94, 1, 94), rgb(20, 19, 19)); 
+.card-purple { background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(0, 0, 0)); 
    transition: 0.5;}
 
    .card-purple:hover { background-image: linear-gradient( to right, black, black) }
@@ -396,7 +412,7 @@ z-index: -1;
 
 }
 
-.why-choose p {margin-top: 20px; font-size: 1.5vw;}
+.why-choose p {margin-top: 20px; font-size: 14pt;}
 
 
 .why-choose h3 { padding: 5px;font-weight: bold; font-size: 3vw;}
@@ -803,7 +819,7 @@ color: rgb(75, 2, 75) ;
 
 .row {position:relative}
 
-.card-purple {height: fit-content; margin-bottom: 5px; margin-top: 5px;}
+.card-purple {height: fit-content; max-height: 350px; margin-bottom: 5px; margin-top: 5px;}
 .card-purple {height: fit-content; margin-bottom: 5px;margin-top: 5px;}
 
 .card-black:hover {background-image: linear-gradient(to bottom, rgb(94, 1, 94), black)
@@ -910,9 +926,15 @@ div.column {width:100%; height: fit-content;}
 }
 
 
-@media only screen and (max-width:730){
+
+
+@media only screen and (max-width:730px){
   .navContainer{bottom: 
+
     0;}
+
+    .why-choose h3 {font-size: 20pt;}
+    
 }
 
 
