@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+   <!--link to font awesome cloud-->
+   <script src="https://kit.fontawesome.com/304d1189c9.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+   rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <link rel="stylesheet" href="wallstreetfxcsscopy2.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Welcome to WallStreetFX!</title>
+
+    <style>
+      
+      .item img {width: 100%; filter: brightness(50%);}
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      
+      body {
+        font-family: sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /*Latest CSS addition*/
+
+
+
+@media only screen and (max-width:400px){
+
+  .higher-menu {
+    display: none;
+  
+  }
+
+
+}
+
+.clock1 {
+    position: relative;
+    float: right;
+    bottom: 40px;
+  right:2.5%;
+    color: #000000;
+    font-size: 20px;
+    font-family: futura;
+    font-weight:bold;
+
+}
+
+.clock2 {
+    position: relative;
+    float: right;
+    bottom: 40px;
+  right:5%;
+    color: #000000;
+    font-size: 20px;
+    font-family: futura;
+    font-weight:bold;
+
+}
+
+
+
+
+/* STYLES SPECIFIC TO footer1  */
+.footer1 {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: black;
+}
+.footer1 .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer1 .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer1 .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer1 .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer1 .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer1 .col {
+    width: 33%;
+  }
+  .footer1 .col h1 {
+    font-size: 14px;
+  }
+  .footer1 .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer1 .col {
+      width: 50%;
+    }
+    .footer1 .col h1 {
+      font-size: 14px;
+    }
+    .footer1 .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer1 .col {
+    width: 100%;
+  }
+}
+
+.warning {padding: 10px; color:white}
+.col ul li a:link {text-decoration: none; color: purple;}
+
+.copyright {color:white;}
+
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  width:100%;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+  width: 50%;
+  height:550px;
+  overflow:hidden;
+}
+
+.flex-item-left img { box-shadow: 10px 10px 10px purple}
+
+.flex-item-right {
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 50%;
+}
+
+.flex-item-right h3 { font-size: 3vw;} 
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+      
+      </style>
+
+  </head>
+
+<body>
+
+  <div class="higher-menu">
+    <div class="socials-bgscrn">
+      <a > <span class="fab fa-facebook-f"> </span> </a> 
+      <a > <span class="fab fa-twitter"> </span> </a> 
+      <a > <span class="fab fa-instagram"> </span> </a>
+    </div>
+    <div class="clocks-bgscrn">
+      <a></a> 
+      <a></a> 
+      <a></a>
+    </div>
+    <div>
+  
+    <div id="CurrentClock" class="clock1" onload="showTime()"></div>
+      <div id="LagClock" class="clock2" onload="showTime2()"></div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+<header id="header-hidable" class="navContainer">
+    <div class="logo">
+        <a href="Newindex.html"><img src="images\wallstreetfxlogo.png" alt="logo"></a>
+    </div>
+<div class="navbarz">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-listz" class="nav-listz">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="Newindex.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="#careers">Courses</a></li>
+    <li><a href="#Member">Sign Up/Member login</a></li>
+    <li class="socials-mobile">
+      <a > <span class="fab fa-facebook-f"> </span> </a> 
+      <a > <span class="fab fa-twitter"> </span> </a> 
+      <a > <span class="fab fa-instagram"> </span> </a>
+    </li>
+</ul>
+
+</div>
+</header>
+
+
+   <div class="contact-container">    
+      <section class="contact-sec1">
+      <h1 class="ourservices">Contact WallStreetFX!</h1>
+
+      <h3 style="background-color: rgb(255, 196, 0); padding: 10px; width: fit-content; height: auto; border-radius: 50% 0%;">Contact Form</h3>
+
+      <div class="container" >
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+          <label for="email">Email address</label>
+          <input type="text" id="email" name="email" placeholder="Your email address..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+           <name name="country" id="country" class="county">
+<option value="0">-- Select Country --</option>
+<option selected="" value="United States">United States</option>
+<option value="Canada">Canada</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antarctica">Antarctica</option>
+<option value="Antigua">Antigua</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijani">Azerbaijani</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Netherlands">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia-Hercegovina">Bosnia-Hercegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Bouvet Island">Bouvet Island</option>
+<option value="Brazil">Brazil</option>
+<option value="British IOT">British IOT</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Rep">Central African Rep</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos Islands">Cocos Islands</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Croatia">Croatia</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="East Timor">East Timor</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Faeroe Islands">Faeroe Islands</option>
+<option value="Falkland Islands">Falkland Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="French Southern">French Southern</option>
+<option value="French Southern Ter">French Southern Ter</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Heard">Heard</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Ireland">Ireland</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Ivory Coast">Ivory Coast</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Laos">Laos</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macau">Macau</option>
+<option value="Macedonia">Macedonia</option>
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia">Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia">Micronesia</option>
+<option value="MNP">MNP</option>
+<option value="Moldova">Moldova</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="NER">NER</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Neutral Zone">Neutral Zone</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niue">Niue</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="North Korea">North Korea</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn">Pitcairn</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Russia">Russia</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Helena">Saint Helena</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Pierre">Saint Pierre</option>
+<option value="Saint Vincent">Saint Vincent</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Scotland">Scotland</option>
+<option value="Senegal">Senegal</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovak Republic">Slovak Republic</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somali Democratic">Somali Democratic</option>
+<option value="South Africa">South Africa</option>
+<option value="South Georgia">South Georgia</option>
+<option value="South Korea">South Korea</option>
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="St. Kitts and Nevis">St. Kitts and Nevis</option>
+<option value="STP">STP</option>
+<option value="Suriname">Suriname</option>
+<option value="Svalbard">Svalbard</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syria">Syria</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania">Tanzania</option>
+<option value="TCA">TCA</option>
+<option value="Thailand">Thailand</option>
+<option value="Toga">Toga</option>
+<option value="Togolese">Togolese</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tongo">Tongo</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab">United Arab</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="Upper Volta">Upper Volta</option>
+<option value="Uruguay">Uruguay</option>
+<option value="USSR(Former)">USSR(Former)</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Vatican City">Vatican City</option>
+<option value="Venezuela">Venezuela</option>
+<option value="VI, British">VI, British</option>
+<option value="Viet Nam">Viet Nam</option>
+<option value="Virgin Islands, USA">Virgin Islands, USA</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="WLF">WLF</option>
+<option value="Yemen">Yemen</option>
+<option value="Yugoslavia">Yugoslavia</option>
+<option value="Zaire">Zaire</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+</name>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+
+      </div>
+      <div> 
+          
+           <p> <span class="fas fa-laptop"></span> info@wallstreetFX.net</p>
+           <p> <span class="fa fa-envelope"></span> info@wallstreetforex.net</p>
+           <p><span class="fas fa-phone"></span> 07035719745</p>
+
+           <div id="map"></div>
+
+    </div>
+     
+      </section>
+
+
+   </div> 
+
+
+
+ <div class="accepted">
+  <p class="accepted-head">Accepted means of payment<sup>*</sup></p>
+  <p class="methods"><span class="fab fa-cc-mastercard"></span> <span class="fab fa-cc-visa"></span> <span class="fab fa-cc-stripe"></span> 
+    <span class="fab fa-cc-paypal	"></span>
+    <span class="fab fa-ethereum"></span> <span class="fab fa-bitcoin"></span> </p>
+  
+     </div>
+  
+  
+<!-- footer1 START -->
+<div class="footer1">
+<div class="contain">
+  <div class="warning"> <p> WARNING: Foreign Exchange Trading and Investment in derivatives can be very speculative and may result
+     in losses as well as profits. Foreign Exchange and Derivatives Trading is not suitable for many public members, and only risk 
+     capital should be applied. The website does not consider special investment goals, the financial institution, or individual users'
+      specific requirements. We will not accept liability for any loss or damage, including without limitation to any loss of profit,
+       which may arise directly or indirectly from the use of or reliance on information contained on this site or in your trading.
+        You should carefully consider your financial situation and consult your financial advisors about your situation's suitability 
+        before making any investment or entering into any transactions.
+        <p>*Companies or products whose logos are shown are not directly affiliated to WallStreetFX.</p>
+    </P></div>
+<div class="col">
+  <h1>Pages</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+   <li><a href="About.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   <li><a href="#Member">Member login</a></li>
+  </ul>
+</div>
+<div class="col">
+  <h1>Forex Trade Courses</h1>
+  <ul>
+    <li>SUPPORT AND RESISTANCE LEVELS</li>
+    <li>THE STRUCTURE OF THE FX MARKET </li>
+    <li>JAPANESE CANDLESTICKS </li>
+    <li>SUPPLY AND DEMAND </li>
+
+  </ul>
+</div>
+<div class="col">
+  <h1>Accounts</h1>
+  <ul>
+    <li>Sign Up</li>
+    <li>Sign In</li>
+    <li><a href= "services.html">Learn more</a></li>
+    <li>Contact us</li>
+  </ul>
+</div>
+<div class="col">
+  <h1>Support</h1>
+  <ul>
+    <li>Contact us</li>
+    <li>Terms and conditions</li>
+      <li>Refunds and renewals</li>
+      <li>Our blog for forex tips</li>
+  </ul>
+</div>
+<div class="col">
+  <h1>Official Links</h1>
+  <ul>
+    <li>WallstreetFx.net</li>
+    <li>Wallstreetforex.net</li>
+    <li>Open ticket</li>
+  </ul>
+</div>
+<div class="col social">
+  <h1>Social</h1>
+  <ul>
+    <li><span class="fab fa-facebook"></span> </li>
+    <li><span class="fab fa-instagram"></span> </li>
+      <li><span class="fab fa-twitter"></span> </li>
+      <li><span class="fa fa-envelope	"></span> </li>
+  </ul>
+</div>
+
+<div class="clearfix"></div>
+<div>
+ <p class="copyright"> <span class="far fa-copyright"></span> WallStreetFX 2021. All Rights Reserved</p>
+  </div>
+</div>
+</div>
+<!-- END OF footer1 -->
+  
+
+
+
+
+
+<script>
+var navList = document.getElementById("nav-listz");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+
+//Current user's clock
+
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("CurrentClock").innerText = time;
+  document.getElementById("CurrentClock").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();
+
+//2nd Current user's clock ends
+
+function showTime2(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("LagClock").innerText = time;
+  document.getElementById("LagClock").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime2();
+//Current user's clock ends
+
+
+//JS to make top menu hidden when scrolling down and re-appear when scroll up
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+ if (prevScrollpos > currentScrollPos) {
+   document.getElementById("header-hidable").style.top = "75px/";
+ }
+ prevScrollpos = currentScrollPos;
+}
+
+
+</script>
+
+
+
+</body>
+</html>
