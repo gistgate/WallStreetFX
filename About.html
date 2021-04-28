@@ -1,0 +1,697 @@
+ <!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    
+   <!--link to font awesome cloud-->
+   <script src="https://kit.fontawesome.com/304d1189c9.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+   rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+   <link rel="stylesheet" href="wallstreetfxcsscopy2.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Welcome to WallStreetFX!</title>
+
+    <style>
+      
+      .item img {width: 100%; filter: brightness(50%);}
+
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      
+      body,html {height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /*Latest CSS addition*/
+
+
+
+@media only screen and (max-width:400px){
+
+  .higher-menu {
+    display: none;
+  
+  }
+
+
+}
+
+.clock1 {
+    position: relative;
+    float: right;
+    bottom: 40px;
+  right:2.5%;
+    color: #000000;
+    font-size: 20px;
+    font-family: futura;
+    font-weight:bold;
+
+}
+
+.clock2 {
+    position: relative;
+    float: right;
+    bottom: 40px;
+  right:5%;
+    color: #000000;
+    font-size: 20px;
+    font-family: futura;
+    font-weight:bold;
+
+}
+
+
+
+
+/* STYLES SPECIFIC TO footer1  */
+.footer1 {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: black;
+}
+.footer1 .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer1 .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255,255,255,0.2);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer1 .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer1 .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer1 .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer1 .col {
+    width: 33%;
+  }
+  .footer1 .col h1 {
+    font-size: 14px;
+  }
+  .footer1 .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer1 .col {
+      width: 50%;
+    }
+    .footer1 .col h1 {
+      font-size: 14px;
+    }
+    .footer1 .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer1 .col {
+    width: 100%;
+  }
+}
+
+.warning {padding: 10px; color:white}
+.col ul li a:link {text-decoration: none; color: purple;}
+
+.copyright {color:white;}
+
+
+.flex-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  width:100%;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 50%;
+  width: 50%;
+  height:550px;
+  overflow:hidden;
+}
+
+.flex-item-left img { box-shadow: 10px 10px 10px purple}
+
+.flex-item-right {
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  flex: 50%;
+}
+
+.flex-item-right h3 { font-size: 3vw;} 
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+}
+      
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Hero area style*/
+.services-hero-image {
+  background-image: linear-gradient(rgba(255, 0, 255, 0.5), rgba(0, 0, 0, 0.5)), url("images/Slide-image3.jpg");
+  height:auto;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  bottom: 40px;
+    z-index: -1;
+  
+}
+
+.services-hero-image h1 {font-size:7vw;
+padding-top:30px; padding-left:20px;
+
+}
+
+@media only screen and (max-width:768px){
+
+  .services-hero-image h1 {font-size:10vw; margin-top: 50px;}
+
+}
+
+@media(max-width:641px){
+  .services-hero-image  {height: 70%;}
+  .about-container h1{
+   
+    font-size:3em; font-family: sans-serif;
+  }
+}
+
+.hero-text-all {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text-all button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text-all button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+/*.flex-container-service1*/
+
+.flex-container-service1 {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left-service1 {
+  background-color: #f1f1f1;
+  padding: 10px;
+  flex: 30%;
+}
+
+.flex-item-right-service1 {
+  color: #000000;
+  font-size: 17pt;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%; margin-right: 5%;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right-service1 h2 {color: purple; font-weight:bolder;}
+
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+@media (max-width: 800px) {
+
+.flex-container-service1{width:100%}
+
+  .flex-item-right-service1, .flex-item-left-service1 {
+    flex: 100%;
+  }
+}
+
+.join-now-service2 { width: fit-content; padding: 15px; background-color: rgb(184, 2, 175); transition: 0.5s ; color:white;
+  margin-left: auto; margin-right:auto; font-size: 18pt;
+
+}
+.join-now-service2:hover { 
+  width: fit-content;
+   padding: 20px;
+   font-size: 20pt;
+    background-color: rgb(184, 2, 175); 
+    transform: rotate(360deg); 
+    color: chartreuse;
+
+}
+
+      </style>
+
+  </head>
+
+<body>
+
+  <div class="higher-menu">
+    <div class="socials-bgscrn">
+      <a > <span class="fab fa-facebook-f"> </span> </a> 
+      <a > <span class="fab fa-twitter"> </span> </a> 
+      <a > <span class="fab fa-instagram"> </span> </a>
+    </div>
+    <div class="clocks-bgscrn">
+      <a></a> 
+      <a></a> 
+      <a></a>
+    </div>
+    <div>
+  
+    <div id="CurrentClock" class="clock1" onload="showTime()"></div>
+      <div id="LagClock" class="clock2" onload="showTime2()"></div>
+    </div>
+  </div>
+
+
+  </div>
+
+
+<header id="header-hidable" class="navContainer">
+    <div class="logo">
+        <a href="Newindex.html"><img src="images\wallstreetfxlogo.png" alt="logo"></a>
+    </div>
+<div class="navbarz">
+
+<div class="icon-bar" onclick="Show()">
+    <i></i>
+    <i></i>
+    <i></i>
+</div>
+
+<ul id="nav-listz" class="nav-listz">
+    <li class="close"><span onclick="Hide()">×</span></li>
+    <li><a href="Newindex.html">Home</a></li>
+    <li><a href="About.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+    <li><a href="#careers">Courses</a></li>
+    <li><a href="#Member">Sign Up/Member login</a></li>
+    <li class="socials-mobile">
+      <a > <span class="fab fa-facebook-f"> </span> </a> 
+      <a > <span class="fab fa-twitter"> </span> </a> 
+      <a > <span class="fab fa-instagram"> </span> </a>
+    </li>
+</ul>
+
+</div>
+</header>
+
+
+
+<div class="services-hero-image">
+  <h1>About Us</h1>
+  <p>  Wallstreet FX is a revolutionary forex education and trading firm dedicated to raising trading geniuses
+       and helping forward-thinking individuals attain financial freedom and generational wealth. Through comprehensive, strategic courses, hold-hand mentorship, and market analysis, we help YOU become a successful serial trader.
+  </p>
+</div>
+
+<div class="flex-container mob-col-12"> <!--1-->
+
+  <div class="mob-col-12">
+    <img src="images\User_Research.png" class="col-12" alt="An illustration of investment man" style="width: 100%;">
+   </div>
+
+    <div class="flex-text1 mob-col-12">
+      <p class="purple-lable-about" ><span class=" "> Our Goal</span>  </p>
+
+       <p>Our goal is to connect people to the awesome opportunities in the world of foreign exchange trading via an
+        engaging and inspirational learning experience while showing them new, effective strategies to attaining generational wealth.
+          </p>
+     
+    </div>
+
+</div> <!--1-->
+
+
+<div class="flex-container mob-col-12"> <!--1-->
+
+  <div class="mob-col-12">
+    <img src="images\Premium_course.png" class="col-12" alt="An illustration of investment man" style="width: 100%;">
+   </div>
+
+    <div class="flex-text1 mob-col-12">
+      <p class="purple-lable-about" ><span class=" "> Our Mission</span>  </p>
+
+       <p>Wallstreet FX's mission is to create an opportunity for personal and
+        generational financial growth to traders at all levels while creating an enabling learning environment and exclusive course
+         to attain the required skills needed to trade successfully.
+          </p>
+      
+    </div>
+
+</div> <!--1-->
+
+
+
+  <!--FAQs Accordion start-->
+
+  <section class="faqs"
+  
+ <h2> WallStreetFX FAQs</h2>
+
+<button class="accordion">What is WallStreetFx?</button>
+<div class="panel">
+  <p>We’re an experienced Forex Trading Firm committed to helping clients strategize and invest for their future financial security. We specialize in assessing each of our client’s unique needs and creating a personalized trading plan that will work best for their interests. We have gained invaluable experience working in a variety of markets, guaranteeing you get the guidance needed to achieve investment success</p>
+</div>
+
+<button class="accordion">Is WallStreetFx a registered company?</button>
+<div class="panel">
+  <p>Yes! Wall Street Fx is registered with the Corporate Affairs Commission which is the apex company in charge of company registration in NIgeria and recognized internationally.</p>
+</div>
+
+<button class="accordion">Are my Payments secure?</button>
+<div class="panel">
+  <p>Absolutely! 
+    WallStreetFx is secured with international and military grade security to keep your card information and other data encrypted and safe at
+     all times</p>
+</div>
+
+
+<button class="accordion">Where can I see your office?</button>
+<div class="panel">
+  <p>You can find wallstreetFx at Number 1, Dele Udor Street, Ikenegbu Junction, Owerri, Imo state in Nigeria
+     where our head office is located for now. We will update as we open other offices around the world. You can use the satelite tool below to navigate to our office or contact us using the contact form if you need assistance.</p>
+</div>
+
+
+<button class="accordion">Is Forex trading safe?</button>
+<div class="panel">
+  <p>Forex trading is the biggest business in the world. Millions of people participate daily. However, there are risks of capital loss as in all 
+    tradings. Our job at WallStreetFx is to show you how to best to minimise the risks and to win most of your trades.</p>
+</div>
+
+
+<button class="accordion">Is WallStreetFX owned by the American WallStreet?</button>
+<div class="panel">
+  <p>No. WallSTreetFx is owned by Wall Street Forex Nigeria and it is not affiliated with the Wall Street of the United states apart from the 
+    fact that we are in the same line of work - foreign exchange and stocks</p>
+</div>
+
+
+ </div>
+</section>
+
+ <!--FAQs Accordion end-->
+
+ 
+ <section class="section3">
+
+  <img src="images/Slide-image3 - Copy.jpg" >
+
+  <div class="flex-container1">
+    <div class="flex-item-left">
+      <img class="section3-image" src="images\group.png" style="width: 100%;  filter: contrast(150%);">
+    </div>
+    <div class="flex-item-right">
+      <h3 class="fw-bold">The journey of a million trades starts with WallStreetFX!</h3>
+      <div>  
+        <p class="learnmore-button2 rounded-pill fs-4">Start Now <span class="far fa-arrow-alt-circle-right arrow-right"></span> </p> 
+        </div>
+    </div>
+  </div>
+  
+
+
+
+
+   
+ <div class="accepted">
+  <p class="accepted-head">Accepted means of payment<sup>*</sup></p>
+  <p class="methods"><span class="fab fa-cc-mastercard"></span> <span class="fab fa-cc-visa"></span> <span class="fab fa-cc-stripe"></span> 
+    <span class="fab fa-cc-paypal	"></span>
+    <span class="fab fa-ethereum"></span> <span class="fab fa-bitcoin"></span> </p>
+  
+     </div>
+  
+  
+<!-- footer1 START -->
+<div class="footer1">
+<div class="contain">
+  <div class="warning"> <p> WARNING: Foreign Exchange Trading and Investment in derivatives can be very speculative and may result
+     in losses as well as profits. Foreign Exchange and Derivatives Trading is not suitable for many public members, and only risk 
+     capital should be applied. The website does not consider special investment goals, the financial institution, or individual users'
+      specific requirements. We will not accept liability for any loss or damage, including without limitation to any loss of profit,
+       which may arise directly or indirectly from the use of or reliance on information contained on this site or in your trading.
+        You should carefully consider your financial situation and consult your financial advisors about your situation's suitability 
+        before making any investment or entering into any transactions.
+        <p>*Companies or products whose logos are shown are not directly affiliated to WallStreetFX.</p>
+    </P></div>
+<div class="col">
+  <h1>Pages</h1>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+   <li><a href="about.html">About Us</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+   <li><a href="#Member">Member login</a></li>
+  </ul>
+</div>
+<div class="col">
+  <h1>Forex Trade Courses</h1>
+  <ul>
+    <li>SUPPORT AND RESISTANCE LEVELS</li>
+    <li>THE STRUCTURE OF THE FX MARKET </li>
+    <li>JAPANESE CANDLESTICKS </li>
+    <li>SUPPLY AND DEMAND </li>
+
+  </ul>
+</div>
+<div class="col">
+  <h1>Accounts</h1>
+  <ul>
+    <li>Sign Up</li>
+    <li>Sign In</li>
+    <li><a href= "services.html">Learn more</a></li>
+    <li>Contact us</li>
+  </ul>
+</div>
+<div class="col">
+  <h1>Support</h1>
+  <ul>
+    <li>Contact us</li>
+    <li>Terms and conditions</li>
+      <li>Refunds and renewals</li>
+      <li>Our blog for forex tips</li>
+  </ul>
+</div>
+<div class="col">
+  <h1>Official Links</h1>
+  <ul>
+    <li>WallstreetFx.net</li>
+    <li>Wallstreetforex.net</li>
+    <li>Open ticket</li>
+  </ul>
+</div>
+<div class="col social">
+  <h1>Social</h1>
+  <ul>
+    <li><span class="fab fa-facebook"></span> </li>
+    <li><span class="fab fa-instagram"></span> </li>
+      <li><span class="fab fa-twitter"></span> </li>
+      <li><span class="fa fa-envelope	"></span> </li>
+  </ul>
+</div>
+
+<div class="clearfix"></div>
+<div>
+ <p class="copyright"> <span class="far fa-copyright"></span> WallStreetFX 2021. All Rights Reserved</p>
+  </div>
+</div>
+</div>
+<!-- END OF footer1 -->
+  
+
+
+
+
+
+<script>
+var navList = document.getElementById("nav-listz");
+function Show() {
+navList.classList.add("_Menus-show");
+}
+
+function Hide(){
+navList.classList.remove("_Menus-show");
+}
+
+//Current user's clock
+
+function showTime(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("CurrentClock").innerText = time;
+  document.getElementById("CurrentClock").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime();
+
+//2nd Current user's clock ends
+
+function showTime2(){
+  var date = new Date();
+  var h = date.getHours(); // 0 - 23
+  var m = date.getMinutes(); // 0 - 59
+  var s = date.getSeconds(); // 0 - 59
+  var session = "AM";
+  
+  if(h == 0){
+      h = 12;
+  }
+  
+  if(h > 12){
+      h = h - 12;
+      session = "PM";
+  }
+  
+  h = (h < 10) ? "0" + h : h;
+  m = (m < 10) ? "0" + m : m;
+  s = (s < 10) ? "0" + s : s;
+  
+  var time = h + ":" + m + ":" + s + " " + session;
+  document.getElementById("LagClock").innerText = time;
+  document.getElementById("LagClock").textContent = time;
+  
+  setTimeout(showTime, 1000);
+  
+}
+
+showTime2();
+//Current user's clock ends
+
+
+//JS to make top menu hidden when scrolling down and re-appear when scroll up
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+ if (prevScrollpos > currentScrollPos) {
+   document.getElementById("header-hidable").style.top = "75px/";
+ }
+ prevScrollpos = currentScrollPos;
+}
+
+
+</script>
+
+
+
+</body>
+</html>
