@@ -492,12 +492,7 @@ color: rgb(247, 222, 0);
 .section3>img {object-fit: cover; opacity: 50%; height: auto;}
 .section3 .flex-container1 {position:absolute; top:2%;}
   
-@media only screen and (max-width:719px){
 
-  .section3 { height: auto; max-height: 800px;}
-
-
-}
 .accepted > p {color: black; text-align: center; }
 .methods{font-size: 50pt;}
 .methods > span {padding: 0 1% ; transition: 0.5s;}
@@ -1279,6 +1274,16 @@ right:5%;
 }
 
 
+@media only screen and (max-width:799px){
+
+  
+.section3 {
+  width: 100%;
+  height: auto;
+  overflow:auto;
+}
+
+}
 /* Extra large devices (large laptops and desktops, 2000px and up) */
 @media only screen and (min-width: 2000px) {
 
@@ -1326,10 +1331,6 @@ overflow: visible;
 .rev-text { top:15%;
 }
 
-.section3 {
-  height: auto;
-  width: 100%;
-}
 
 .flex-item-left {
   padding: 10px;
