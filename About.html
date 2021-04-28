@@ -313,7 +313,7 @@ padding-top:30px; padding-left:20px;
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 @media (max-width: 800px) {
 
-.flex-container-service1{width:100%}
+.flex-container-service1{width:100%;}
 
   .flex-item-right-service1, .flex-item-left-service1 {
     flex: 100%;
@@ -441,51 +441,50 @@ padding-top:30px; padding-left:20px;
 
   <!--FAQs Accordion start-->
 
-  <section class="faqs"
+  <div class="faqs">
   
  <h2> WallStreetFX FAQs</h2>
 
-<button class="accordion">What is WallStreetFx?</button>
+
+ 
+<button class="accordion1">What is WallStreetFx?</button>
 <div class="panel">
   <p>We’re an experienced Forex Trading Firm committed to helping clients strategize and invest for their future financial security. We specialize in assessing each of our client’s unique needs and creating a personalized trading plan that will work best for their interests. We have gained invaluable experience working in a variety of markets, guaranteeing you get the guidance needed to achieve investment success</p>
 </div>
 
-<button class="accordion">Is WallStreetFx a registered company?</button>
+<button class="accordion1">Is WallStreetFx a registered company?</button>
 <div class="panel">
   <p>Yes! Wall Street Fx is registered with the Corporate Affairs Commission which is the apex company in charge of company registration in NIgeria and recognized internationally.</p>
 </div>
 
-<button class="accordion">Are my Payments secure?</button>
+<button class="accordion1">Are my Payments secure?</button>
 <div class="panel">
   <p>Absolutely! 
     WallStreetFx is secured with international and military grade security to keep your card information and other data encrypted and safe at
      all times</p>
-</div>
+     </div>
 
-
-<button class="accordion">Where can I see your office?</button>
+<button class="accordion1">Where can I see your office?</button>
 <div class="panel">
   <p>You can find wallstreetFx at Number 1, Dele Udor Street, Ikenegbu Junction, Owerri, Imo state in Nigeria
-     where our head office is located for now. We will update as we open other offices around the world. You can use the satelite tool below to navigate to our office or contact us using the contact form if you need assistance.</p>
+     where our head office is located for now. We will update as we open other offices around the world. You can use
+      the satelite tool below to navigate to our office or contact us using the contact form if you need assistance.</p>
 </div>
-
-
-<button class="accordion">Is Forex trading safe?</button>
+<button class="accordion1">Is Forex trading safe?</button>
 <div class="panel">
   <p>Forex trading is the biggest business in the world. Millions of people participate daily. However, there are risks of capital loss as in all 
     tradings. Our job at WallStreetFx is to show you how to best to minimise the risks and to win most of your trades.</p>
 </div>
-
-
-<button class="accordion">Is WallStreetFX owned by the American WallStreet?</button>
+<button class="accordion1">Is WallStreetFX owned by the American WallStreet?</button>
 <div class="panel">
   <p>No. WallSTreetFx is owned by Wall Street Forex Nigeria and it is not affiliated with the Wall Street of the United states apart from the 
     fact that we are in the same line of work - foreign exchange and stocks</p>
 </div>
 
-
  </div>
-</section>
+
+
+
 
  <!--FAQs Accordion end-->
 
@@ -505,9 +504,9 @@ padding-top:30px; padding-left:20px;
         </div>
     </div>
   </div>
+
+  </section>
   
-
-
 
 
    
@@ -594,14 +593,12 @@ padding-top:30px; padding-left:20px;
   </div>
 </div>
 </div>
+
 <!-- END OF footer1 -->
   
 
-
-
-
-
 <script>
+
 var navList = document.getElementById("nav-listz");
 function Show() {
 navList.classList.add("_Menus-show");
@@ -688,10 +685,24 @@ var currentScrollPos = window.pageYOffset;
  prevScrollpos = currentScrollPos;
 }
 
+//Accordion1 Javascript//
+
+var acc = document.getElementsByClassName("accordion1");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
 
 </script>
-
-
 
 </body>
 </html>
