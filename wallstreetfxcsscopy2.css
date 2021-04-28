@@ -549,10 +549,18 @@ opacity: 0.2
 .about-sec1 p{width: 50%;}
 
 
+.contact-sec1 {position: absolute; top: 60px;}
+
+
+
 @media(max-width:800px){
 
   .about-sec1 p {
     width: 80%;}
+
+    .contact-sec1 p {
+      width: 100%;}
+  
 
 }
 
@@ -667,7 +675,7 @@ font-size: 2vw; }
 
 .contact-container {
 
-  height: 1000px;
+  height: 1200px;
  width:100%;
    display: block; 
     background-image:linear-gradient(rgb(75, 2, 75), rgb(199, 2, 199));
