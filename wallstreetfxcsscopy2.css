@@ -737,26 +737,24 @@ input[type=submit]:hover {
 
 /*FAQs Accordion CSS starts*/
 
-.accordion {
-  background-color: #eee;
+.accordion1 {
+  background-color: rgb(90, 2, 78);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 15px;
   transition: 0.4s;
-color: rgb(75, 2, 75) ;
 }
 
-.active-acordion, .accordion:hover {
-  background-color: rgb(17, 16, 16);
-  color:white;
+.active, .accordion1:hover {
+  background-color: #ccc;
 }
 
-.accordion:after {
+.accordion1:after {
   content: '\002B';
   color: rgb(0, 0, 0);
   font-weight: bold;
@@ -764,19 +762,20 @@ color: rgb(75, 2, 75) ;
   margin-left: 5px;
 }
 
-.active-acordion:after {
+.active:after {
   content: "\2212";
 }
 
 .panel {
-  color: black;
   padding: 0 18px;
   background-color: white;
+  color: #000000;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  width: 100%;
 }
+
+
 
 .faqs {width: 80%; height:auto;
   margin:auto
@@ -1377,5 +1376,8 @@ overflow: visible;
 
  height: auto;
 }
+
+.flex-text1{ font-size: 40pt;}
+.flex-text2 { font-size: 40pt;}
 
 }
