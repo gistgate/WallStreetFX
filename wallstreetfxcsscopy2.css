@@ -1,7 +1,7 @@
 
 
 body{ margin: 0;
-    font-family: 'Open Sans', sans-serif, Roboto;
+    font-family: 'Franklin Gothic Medium, helvetica, , Open Sans', sans-serif, Roboto;
 font-size: 18px;
 background-color: white;  letter-spacing: 0.05em;
 box-sizing: border-box; 
@@ -1119,8 +1119,20 @@ z-index: 1;
 font-size: 2em;
 padding: 0px 5px;
 }
+
+
+
 .socials-bgscrn {
 margin-left: 10px;
+
+}
+
+@media only screen and (max-width:768px){
+
+.socials-bgscrn {
+  color:purple;
+font-size: 10pt;
+padding: 0px 5px;}
 
 }
 
@@ -1233,6 +1245,16 @@ padding-top: 5px;
     font-weight:bold;
 
 }
+
+
+@media only screen and (max-width:768px){
+
+  
+  .clock1 , .clock2 {
+     bottom:15px; margin-top: 5px;
+  }
+  
+  }
 
 .socials-mobile a {float: left;}
 
