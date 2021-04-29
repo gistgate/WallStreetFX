@@ -191,6 +191,30 @@
 .animationz img{filter:contrast(150%);
   width: 100%;
 }
+
+.mobile-text-overlay{display:none;}
+
+@media only screen and (max-device-width: 765px)
+
+{
+  .carousel-inner, .carousel-indicators, .carousel-control {visibility: hidden;}
+  .carousel { height: 600px; background-image:linear-gradient(rgba(129, 0, 101, 0.8), rgb(0, 1, 5, 0.5)), url("images/Slide-image1.jpg");
+  background-size: cover ;}
+
+  .mobile-text-overlay
+   {display: block; font-size: 25pt; 
+    font-weight: 700; padding: 0 10px; 
+    position: absolute; top: 35%; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+    
+.mobile-text-overlay p:nth-child(2) { 
+  font-size: 20pt; padding: 10px 0;
+   color: rgb(131, 3, 110);background-color: rgba(255,255,255); 
+  text-align:center; margin:auto; 
+  border-radius: 30px; width: 300px; }
+
+}
+
+
       </style>
 
   </head>
@@ -255,6 +279,13 @@
 
     
 <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+  <!-- This is the hero image section for devices of small screens around 765px and below-->
+  <div class="mobile-text-overlay"><p>Take Your First Step
+    Towards Generational Wealth</p>
+  <p>Get Started <span class="fa fa-location-arrow"></span> </p>
+</div>
+<!--end-->
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
